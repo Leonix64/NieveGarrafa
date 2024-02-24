@@ -1,0 +1,48 @@
+ion-content {
+  --background: url(https://w.wallhaven.cc/full/47/wallhaven-47kmv3.png)
+    center/cover no-repeat fixed;
+  background: var(--background);
+
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 0.5s forwards;
+}
+
+.navbar {
+  background: white;
+  .navbar-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: black;
+  }
+}
+
+.titulo {
+  text-align: center;
+  color: black;
+  margin: 50px;
+  font-size: 80px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.conocer-card,
+.maybe-card {
+  background: white;
+
+  .titulo-card-1,
+  .titulo-card-2 {
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+
+// KeyFrames
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
