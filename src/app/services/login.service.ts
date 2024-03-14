@@ -14,7 +14,15 @@ export class LoginService {
     private http: HttpClient
   ) { }
 
-  setToken(token: string):void {
+  loginUser(username: string, password: string): Observable<any> {
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    const loginUrl = `${this.apiUrl}/auth/login`;
+    const userData = { username, password };
+
+    return this.http.post(loginUrl, userData, { headers });
+  }
+
+  setToken(token: string): void {
     localStorage.setItem(this.tokenKey, token);
   }
 
@@ -25,4 +33,9 @@ export class LoginService {
   removeToken(): void {
     localStorage.removeItem(this.tokenKey);
   }
+}
+
+export interface UserData {
+  username: string;
+  password: string;
 }

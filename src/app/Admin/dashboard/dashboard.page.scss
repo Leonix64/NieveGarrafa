@@ -1,0 +1,116 @@
+ion-menu {
+    --width: 250px;
+  }
+  
+  ion-menu ion-content {
+    --background: var(--ion-item-background, var(--ion-background-color, #fff));
+  }
+  
+  ion-menu.md ion-list {
+    padding: 20px 0;
+  }
+  
+  ion-menu.md ion-note {
+    margin-bottom: 30px;
+  }
+  
+  ion-menu.md ion-list-header,
+  ion-menu.md ion-note {
+    padding-left: 10px;
+  }
+  
+  ion-menu.md ion-list#inbox-list {
+    border-bottom: 1px solid var(--ion-color-step-150, #d7d8da);
+  }
+  
+  ion-menu.md ion-list#inbox-list ion-list-header {
+    font-size: 22px;
+    font-weight: 600;
+    min-height: 20px;
+  }
+  
+  ion-menu.md ion-list#labels-list ion-list-header {
+    font-size: 16px;
+    margin-bottom: 18px;
+    color: #757575;
+    min-height: 26px;
+  }
+  
+  ion-menu.md ion-item {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    border-radius: 4px;
+  }
+  
+  ion-menu.md ion-item.selected {
+    --background: rgba(var(--ion-color-primary-rgb), 0.14);
+  }
+  
+  ion-menu.md ion-item.selected ion-icon {
+    color: var(--ion-color-primary);
+  }
+  
+  ion-menu.md ion-item ion-icon {
+    color: #616e7e;
+  }
+  
+  ion-menu.md ion-item ion-label {
+    font-weight: 500;
+  }
+
+  .dashboard {
+    padding: 20px;
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+  
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+  
+      ion-avatar {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  
+      .stat {
+        text-align: center;
+  
+        h2 {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+    }
+  
+    .charts {
+      .chart {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+  
+        h3 {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }

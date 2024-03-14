@@ -7,12 +7,12 @@
 <ion-content [fullscreen]="true">
   <ion-item>
     <ion-label position="floating">Nombre de usuario</ion-label>
-    <ion-input type="text" [(ngModel)]="username"></ion-input>
+    <ion-input type="text" [(ngModel)]="userData.username" required></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="floating">Contraseña</ion-label>
-    <ion-input type="password" [(ngModel)]="password"></ion-input>
+    <ion-input type="password" [(ngModel)]="userData.password" required></ion-input>
   </ion-item>
 
   <ion-button expand="block" (click)="login()">Iniciar sesión</ion-button>

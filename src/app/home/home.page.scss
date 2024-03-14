@@ -1,39 +1,119 @@
 ion-content {
-  --background: url(https://w.wallhaven.cc/full/47/wallhaven-47kmv3.png)
-    center/cover no-repeat fixed;
+  --background: url(https://w.wallhaven.cc/full/47/wallhaven-47kmv3.png) center/cover no-repeat fixed;
   background: var(--background);
+
+  // Ocultar scroll
+  --offset-bottom: auto !important;
+  --overflow: hidden;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out 0.5s forwards;
 }
 
+// Imagenes (Logo(s))
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .avatar {
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    //border: 5px solid #fff;
+    transform: scale(1);
+    transition: transform 0.8s ease-in-out;
+
+    .base-image,
+    .hover-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 0.8s ease-in-out;
+    }
+
+    .hover-image {
+      opacity: 0;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+
+      .base-image {
+        opacity: 0;
+      }
+
+      .hover-image {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// Titulo
+.name {
+  text-align: center;
+  margin-top: 20px;
+
+  p {
+    margin: 15px 0;
+    font-size: 2.5em;
+
+    &.title {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: black;
+      text-shadow: 0 0 10px white;
+    }
+
+    &.slogan {
+      font-style: italic;
+      color: white;
+      text-shadow: 0 0 10px black;
+    }
+  }
+}
+
+// Navbar
 .navbar {
   background: white;
+
   .navbar-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10vh;
     color: black;
+
+    ion-button {
+      margin: 0 10px;
+      white-space: nowrap;
+      max-width: 150px;
+    }
   }
-}
 
-.titulo {
-  text-align: center;
-  color: black;
-  margin: 50px;
-  font-size: 80px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
+  @media (max-width: 768px) {
+    .navbar-buttons {
+      flex-direction: column;
+      height: auto;
 
-.conocer-card,
-.maybe-card {
-  background: white;
-
-  .titulo-card-1,
-  .titulo-card-2 {
-    text-align: center;
-    margin-top: 5px;
+      ion-button {
+        margin: 10px 0;
+        max-width: 100%;
+      }
+    }
   }
 }
 

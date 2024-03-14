@@ -15,7 +15,7 @@ export class RegisterService {
 
   createUser(userData: UserData): Observable<any> {
     const headers = new HttpHeaders({'Content-Type': 'application/json'});
-    const createUserUrl = `${this.apiUrl}/users`;
+    const createUserUrl = `${this.apiUrl}/auth/register`;
 
     return this.http.post(createUserUrl, userData, { headers });
   }
@@ -23,9 +23,11 @@ export class RegisterService {
 
 export interface UserData {
   username: string;
-  password: string;
-  nombre: string;
-  apellido: string;
   email: string;
+  password: string;
+  confirmPassword: string;
+  name: string;
+  last_name: string;
+  date_birth: string;
   phone: string;
 }

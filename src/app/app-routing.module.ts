@@ -23,6 +23,22 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'history',
+    loadChildren: () => import('./history/history.module').then( m => m.HistoryPageModule)
+  },
+  {
+    path: 'gallery',
+    loadChildren: () => import('./gallery/gallery.module').then( m => m.GalleryPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./Admin/dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'test',
+    loadChildren: () => import('./Admin/test/test.module').then( m => m.TestPageModule)
+  },
 ];
 
 @NgModule({

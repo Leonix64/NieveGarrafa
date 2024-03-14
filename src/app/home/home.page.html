@@ -1,82 +1,40 @@
 <ion-content [fullscreen]="true">
+
+  <div class="profile-container">
+    <div class="avatar">
+      <img src="../../assets/LeonixLogo2.png" alt="Leonix Logo" class="base-image">
+      <img src="../../assets/LeonixB&W.png" alt="Leonix B&W" class="hover-image">
+    </div>
+
+    <div class="name">
+      <p class="title">NIEVE DE GARRAFA</p>
+      <p class="slogan">La original de Durango</p>
+    </div>
+  </div>
+
   <ion-card class="navbar">
     <ion-buttons class="navbar-buttons">
-      <ion-button>
+      <ion-button routerLink="/home">
         <ion-icon slot="start" name="ice-cream-outline"></ion-icon>
         <ion-label>Inicio</ion-label>
       </ion-button>
-      <ion-button>
+      <ion-button routerLink="/gallery">
         <ion-icon slot="start" name="images-outline"></ion-icon>
         <ion-label>Galeria</ion-label>
       </ion-button>
-      <ion-button>
+      <ion-button routerLink="/history">
         <ion-icon slot="start" name="hand-left-outline"></ion-icon>
         <ion-label>Nosotros</ion-label>
       </ion-button>
-      <ion-button>
+      <ion-button routerLink="/contact">
         <ion-icon slot="start" name="mail-open-outline"></ion-icon>
         <ion-label>Contacto</ion-label>
       </ion-button>
-      <ion-button>
+      <ion-button routerLink="/reconocenos">
         <ion-icon slot="start" name="musical-notes-outline"></ion-icon>
         <ion-label>Reconocenos</ion-label>
       </ion-button>
     </ion-buttons>
   </ion-card>
 
-  <div class="profile-container">
-    <div class="avatar">
-      <img src="" alt="">
-      <img src="" alt="">
-    </div>
-    <div class="name">
-      <p class="titulo">NIEVE DE GARRAFA</p>
-    </div>
-  </div>
-
-  <ion-grid>
-    <ion-row>
-      <ion-col size="6">
-        <ion-card class="conocer-card">
-          <ion-title class="titulo-card-1">Conocenos</ion-title>
-          <ion-card-content>
-            <ion-row>
-              <ion-col size="4">
-                <ion-img src="https://w.wallhaven.cc/full/6d/wallhaven-6dkwj6.png"></ion-img>
-              </ion-col>
-              <ion-col size="8">
-                <p>¡Bienvenidos a nuestra heladería!</p>
-                <p>Somos un negocio familiar que se especializa en la producción de helado artesanal. Utilizamos
-                  ingredientes frescos y de alta calidad para ofrecerte una experiencia de sabor única en cada
-                  cucharada.</p>
-                <p>Desde 1995, hemos estado sirviendo a nuestra comunidad con pasión y dedicación. Esperamos poder
-                  compartir nuestra pasión por el helado contigo y que disfrutes de nuestra variedad de sabores.</p>
-              </ion-col>
-            </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-
-      <ion-col size="6">
-        <ion-card class="maybe-card">
-          <ion-title class="titulo-card-2">Tarjeta 2</ion-title>
-          <ion-card-content>
-            <ion-row>
-              <ion-col size="4">
-                <ion-img src="https://w.wallhaven.cc/full/28/wallhaven-283ekg.jpg"></ion-img>
-              </ion-col>
-              <ion-col size="8">
-                <p>¡Bienvenidos a nuestra heladería!</p>
-                <p>Somos un negocio familiar que se especializa en la producción de helado artesanal. Utilizamos
-                  ingredientes frescos y de alta calidad para ofrecerte una experiencia de sabor única en cada
-                  cucharada.</p>
-                <p>Desde 1995, hemos estado sirviendo a nuestra comunidad con pasión y dedicación. Esperamos poder
-                  compartir nuestra pasión por el helado contigo y que disfrutes de nuestra variedad de sabores.</p>
-              </ion-col>
-            </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
 </ion-content>
