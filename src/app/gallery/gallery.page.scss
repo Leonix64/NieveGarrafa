@@ -1,5 +1,5 @@
 ion-content {
-  --background: url(https://w.wallhaven.cc/full/kx/wallhaven-kxlomm.jpg)center/cover no-repeat fixed;
+  --background: url(https://w.wallhaven.cc/full/47/wallhaven-47kmv3.png) center/cover no-repeat fixed;
   background: var(--background);
   --offset-bottom: auto !important;
   --overflow: hidden;
@@ -13,35 +13,37 @@ ion-content {
 .gallery {
   padding: 20px;
 
-  h2 {
+  .cards {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+
+  .title {
     text-align: center;
     margin-bottom: 20px;
     font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
   }
 
-  .image-container-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     justify-content: center;
   }
 
   .image-container {
     position: relative;
-    margin: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
-    flex: 0 0 calc(50% - 20px);
-    max-width: calc(50% - 20px);
-
-    @media (max-width: 767px) {
-      flex: 0 0 calc(100% - 20px);
-      max-width: calc(100% - 20px);
-    }
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
     img {
       width: 100%;
-      height: 300px;
+      height: 200px;
       object-fit: cover;
     }
 
@@ -52,11 +54,11 @@ ion-content {
       right: 0;
       background-color: rgba(0, 0, 0, 0.7);
       color: #fff;
-      padding: 5px;
+      padding: 10px;
 
       h3 {
         margin: 0;
-        font-size: 16px;
+        font-size: 18px;
       }
 
       p {

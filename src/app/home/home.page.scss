@@ -126,3 +126,71 @@ ion-content {
     opacity: 1;
   }
 }
+
+// Footer
+ion-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+
+      ion-icon {
+        font-size: 1.5em;
+        margin-right: 10px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 1em;
+      }
+    }
+
+    .social-icons {
+      ion-icon {
+        font-size: 2em;
+        margin: 0 5px;
+        cursor: pointer;
+
+        &:hover {
+          color: lightblue;
+        }
+      }
+    }
+
+    .copyright {
+      margin-top: 10px;
+
+      p {
+        font-size: 0.8em;
+        text-align: center;
+      }
+    }
+  }
+
+  // Responsividad
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+
+      .contact-info,
+      .social-icons {
+        margin-bottom: 10px;
+      }
+
+      .copyright {
+        margin-top: 20px;
+      }
+    }
+  }
+}

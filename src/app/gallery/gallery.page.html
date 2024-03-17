@@ -1,47 +1,105 @@
 <ion-content [fullscreen]="true">
   <div class="gallery">
-    <h2>Galería de Helados</h2>
-    <div class="image-container-wrapper">
+    <ion-card class="cards">
+      <h2 class="title">Galería de Helados</h2>
+    </ion-card>
+    <br>
+    
+    <div class="image-grid">
       <div class="image-container">
-        <img src="https://t4.ftcdn.net/jpg/04/97/49/89/360_F_497498936_Vsm2JsB5L9VVrpXMjCejkzIAHf6Kt6E8.jpg"
-          alt="Nieve de Vainilla">
+        <img class="gallery-image" src="https://t4.ftcdn.net/jpg/04/97/49/89/360_F_497498936_Vsm2JsB5L9VVrpXMjCejkzIAHf6Kt6E8.jpg" alt="Nieve de Vainilla" />
         <div class="image-info">
-          <h3>Nieve de Vainilla</h3>
-          <p>Un delicioso helado de vainilla servido en un cono.</p>
+          <h3 class="image-title">Nieve de Vainilla</h3>
+          <p class="image-description">Un delicioso helado de vainilla servido en un cono.</p>
         </div>
       </div>
       <div class="image-container">
-        <img src="https://assets.unileversolutions.com/recipes-v2/231124.jpg" alt="Nieve de Fresa">
+        <img class="gallery-image" src="https://assets.unileversolutions.com/recipes-v2/231124.jpg" alt="Nieve de Fresa" />
         <div class="image-info">
-          <h3>Nieve de Fresa</h3>
-          <p>Un refrescante helado de fresa adornado con trozos de fruta fresca.</p>
+          <h3 class="image-title">Nieve de Fresa</h3>
+          <p class="image-description">Un refrescante helado de fresa adornado con trozos de fruta fresca.</p>
         </div>
       </div>
       <div class="image-container">
-        <img src="https://cocina-familiar.com/wp-content/uploads/2022/04/helado-de-limon-casero-en-30-minutos.jpg"
-          alt="Nieve de Limón">
+        <img class="gallery-image" src="https://cocina-familiar.com/wp-content/uploads/2022/04/helado-de-limon-casero-en-30-minutos.jpg" alt="Nieve de Limón" />
         <div class="image-info">
-          <h3>Nieve de Limón</h3>
-          <p>Un refrescante helado de limón casero, perfecto para disfrutar en un día caluroso.</p>
+          <h3 class="image-title">Nieve de Limón</h3>
+          <p class="image-description">Un refrescante helado de limón casero, perfecto para disfrutar en un día caluroso.</p>
         </div>
       </div>
       <div class="image-container">
-        <img src="https://okdiario.com/img/2021/07/21/helado-de-pina-colada.jpg" alt="Nieve de Piña">
+        <img class="gallery-image" src="https://okdiario.com/img/2021/07/21/helado-de-pina-colada.jpg" alt="Nieve de Piña" />
         <div class="image-info">
-          <h3>Nieve de Piña</h3>
-          <p>Un exquisito helado de piña colada, perfecto para saborear en cualquier momento.</p>
+          <h3 class="image-title">Nieve de Piña</h3>
+          <p class="image-description">Un exquisito helado de piña colada, perfecto para saborear en cualquier momento.</p>
         </div>
       </div>
     </div>
 
-    <h2>Ingredientes de sabores</h2>
-    <div class="image-container">
-      <img src="https://www.elcastillodeldulce.com.mx/sblock/image_productos/MATSTE019.png" alt="Vainilla">
-      <div class="image-info">
-        <h3>Vainilla</h3>
-        <p>La vainilla es una especia aromática obtenida de las vainas de la orquídea Vanilla planifolia. Su sabor dulce
-          y fragante es ampliamente utilizado en la repostería, helados y otros productos alimenticios.</p>
+    <br>
+    <ion-card class="cards">
+      <h2 class="title">Ingredientes</h2>
+    </ion-card>
+    <br>
+    
+    <div class="image-grid">
+      <div class="image-container">
+        <img class="ingredient-image" src="https://www.gob.mx/cms/uploads/article/main_image/30427/fresa-blog.jpg" alt="Fresa" />
+        <div class="image-info">
+          <h3 class="ingredient-title">Fresa</h3>
+          <p class="ingredient-description">La fresa es una fruta roja y deliciosa, perfecta para dar sabor y color a tus helados.</p>
+        </div>
       </div>
+      <div class="image-container">
+        <img class="ingredient-image" src="https://www.ciad.mx/wp-content/uploads/2020/11/257-WEB-NOTA-2-900x450.jpg" alt="Limon" />
+        <div class="image-info">
+          <h3 class="ingredient-title">Limón</h3>
+          <p class="ingredient-description">El limón es un ingrediente refrescante y ácido que combina muy bien con diferentes sabores de helado.</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img class="ingredient-image" src="https://www.minsalud.gob.bo/images/noticias16/coco2.gif" alt="Coco" />
+        <div class="image-info">
+          <h3 class="ingredient-title">Coco</h3>
+          <p class="ingredient-description">El coco es una fruta tropical que aporta un sabor exótico y cremoso a tus helados.</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img class="ingredient-image" src="https://elpoderdelconsumidor.org/wp-content/uploads/2018/05/pinia.jpg" alt="Piña" />
+        <div class="image-info">
+          <h3 class="ingredient-title">Piña</h3>
+          <p class="ingredient-description">La piña es una fruta jugosa y dulce que añade un toque tropical a tus helados.</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img class="ingredient-image" src="https://static.tuasaude.com/media/article/my/bd/kiwi_60845_l.jpg" alt="Kiwi" />
+        <div class="image-info">
+          <h3 class="ingredient-title">Kiwi</h3>
+          <p class="ingredient-description">El kiwi es una fruta ácida y refrescante que complementa muy bien otros sabores en tus helados.</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img class="ingredient-image" src="https://www.infiltradonews.com/Img/0d548c62bcd842a.jpg" alt="Naranja" />
+        <div class="image-info">
+          <h3 class="ingredient-title">Naranja</h3>
+          <p class="ingredient-description">La naranja es una fruta cítrica y jugosa que aporta un sabor vibrante a tus helados.</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img class="ingredient-image" src="https://www.ciad.mx/wp-content/uploads/2022/05/MANGO-UN-MANJAR-PARA-LA-SALUD.jpg" alt="Mango" />
+        <div class="image-info">
+          <h3 class="ingredient-title">Mango</h3>
+          <p class="ingredient-description">El mango es una fruta tropical dulce y suculenta que es perfecta para helados frescos y deliciosos.</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img class="ingredient-image" src="https://elpoderdelconsumidor.org/wp-content/uploads/2022/06/nueces-carrusel.jpg" alt="Nuez" />
+        <div class="image-info">
+          <h3 class="ingredient-title">Nuez</h3>
+          <p class="ingredient-description">Las nueces son frutos secos con un sabor rico y textura crujiente que añaden un toque especial a tus helados.</p>
+        </div>
+      </div>
+      
     </div>
   </div>
 </ion-content>
